@@ -1,0 +1,29 @@
+项目默认git远程分支为origin/master，此分支代码提交为origin/master
+
+
+创建本地分支(一个或多个)，并处理项目代码：
+	通过origin/master远程分支，左键点击Checkout as new Branch， 输入新分支名，创建新本地分支master
+	通过origin/master远程分支，左键点击Checkout as new Branch， 输入新分支名，创建新本地分支masterClone
+	以上两个分支代码提交都为origin/master, 并且两本地分支在创建时就已经直接将远程分支代码复制到当前本地分支中
+
+
+创建远程分支(一个或多个)，并处理项目代码：
+	通过idea视图右下角New Branch，输入新分支名，创建未定义分支源的新分支dev
+	通过pull将新分支提交到远程git服务器上，即可创建新的远程分支dev，此分支代码提交为origin/dev
+	将当前项目处于dev分支上，通过origin/master远程分支左键点击，选择Merge，即可将origin/master远程分支代码复制到新分支dev中
+
+
+注意：
+	不同分支之间(不管远程或本地)合并代码，需要将目标分支处于当前状态，通过源分支左键点击Merge，合并代码到目标分支中
+	切换不同分支的项目或Merge合并分支代码时，需要先将切换前的分支项目进行commit或push，否则切换后，代码仍会保留切换前内容
+
+
+
+git项目或文件回滚：svn项目操作类型
+	在需要回滚的项目或文件右键选择Local History -> Show History，选择需要回退到的目标历史记录，右键选择Revert，即可完成版本回退
+
+
+
+svn项目和git项目区别：
+	svn项目没有分支概念，提交代码时，只需要选中需要提交的项目文件，直接commit即可
+	git项目存在分支概念，提交代码时，先commit将修改后的文件更新到本地分支(只更新本地分支仓库时可只执行此步)，然后push推送更新到远程分支上
