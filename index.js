@@ -1,1 +1,1 @@
-console.log('hello world!clone');
+console.log('hello world!masterClone');
