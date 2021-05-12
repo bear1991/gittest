@@ -9,7 +9,7 @@
 
 创建远程分支(一个或多个)，并处理项目代码：
 	通过idea视图右下角New Branch，输入新分支名，创建未定义分支源的新分支dev
-	通过pull将新分支提交到远程git服务器上，即可创建新的远程分支dev，此分支代码提交为origin/dev
+	通过push将新分支提交到远程git服务器上，即可创建新的远程分支dev，此分支代码提交为origin/dev
 	将当前项目处于dev分支上，通过origin/master远程分支左键点击，选择Merge，即可将origin/master远程分支代码复制到新分支dev中
 
 
